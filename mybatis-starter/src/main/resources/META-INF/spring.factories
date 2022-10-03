@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.zhichubao.shared.mybatis.starter.BaseMybatisAutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.github.acticfox.mybatis.starter.BaseMybatisAutoConfiguration
