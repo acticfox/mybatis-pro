@@ -1,7 +1,7 @@
 /*
  * $Id$
  *
- * Copyright (c) 2013 zhichubao.com. All Rights Reserved.
+ * Copyright (c) 2013 github.com. All Rights Reserved.
  */
 package com.github.acticfox.base.mybatis;
 
@@ -26,12 +26,12 @@ import com.google.common.base.Throwables;
  * 
  * <pre>
  * &lt;bean id="registBLogic"
- *     class="com.zhichubao.base.sample.blogic.RegistBLogic"&gt;
+ *     class="com.github.acticfox.base.sample.blogic.RegistBLogic"&gt;
  *     &lt;property name="updateDAO" ref="updateDAO" /&gt;
  * &lt;/bean&gt;
  * 
  * &lt;bean id="<b>updateDAO</b>"
- *     class="<b>com.zhichubao.base.orm.mybatis.UpdateDAOMyBatisImpl</b>"&gt;
+ *     class="<b>com.github.acticfox.base.orm.mybatis.UpdateDAOMyBatisImpl</b>"&gt;
  *     &lt;property name="sqlSessionFactory" ref="sqlSessionFactory" /&gt;
  * &lt;/bean&gt;
  * 

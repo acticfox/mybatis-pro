@@ -17,12 +17,12 @@ import com.github.acticfox.base.mybatis.session.ResultHandlerWrapper;
  * 
  * <pre>
  * &lt;bean id="sendmailBLogic"
- *     class="com.zhichubao.base.sample.blogic.SendmailBLogic"&gt;
+ *     class="com.github.acticfox.base.sample.blogic.SendmailBLogic"&gt;
  *     &lt;property name="queryRowHandlerDAO" ref="queryRowHandlerDAO" /&gt;
  * &lt;/bean&gt;
  * 
  * &lt;bean id="<b>queryRowHandlerDAO</b>"
- *     class="<b>com.zhichubao.base.orm.mybatis.QueryRowHandlerDAOMyBatisImpl</b>"&gt;
+ *     class="<b>com.github.acticfox.base.orm.mybatis.QueryRowHandlerDAOMyBatisImpl</b>"&gt;
  *     &lt;property name="sqlSessionFactory" ref="sqlSessionFactory" /&gt;
  * &lt;/bean&gt;
  * 

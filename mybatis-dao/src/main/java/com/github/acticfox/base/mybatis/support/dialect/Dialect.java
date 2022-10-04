@@ -1,7 +1,7 @@
 /*
  * $Id: Dialect.java 252 2013-05-30 03:23:10Z fanyong.kfy $
  *
- * Copyright (c) 2013 zhichubao.com. All Rights Reserved.
+ * Copyright (c) 2013 github.com. All Rights Reserved.
  */
 package com.github.acticfox.base.mybatis.support.dialect;
 

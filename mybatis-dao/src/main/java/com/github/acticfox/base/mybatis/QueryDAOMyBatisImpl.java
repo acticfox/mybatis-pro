@@ -1,7 +1,7 @@
 /*
  * $Id$
  *
- * Copyright (c) 2013 zhichubao.com. All Rights Reserved.
+ * Copyright (c) 2013 github.com. All Rights Reserved.
  */
 package com.github.acticfox.base.mybatis;
 
@@ -25,12 +25,12 @@ import com.github.acticfox.base.dao.QueryDAO;
  * 
  * <pre>
  * &lt;bean id="listBLogic"
- *     class="com.zhichubao.base.sample.blogic.ListBLogic"&gt;
+ *     class="com.github.acticfox.base.sample.blogic.ListBLogic"&gt;
  *     &lt;property name="queryDAO" ref="queryDAO" /&gt;
  * &lt;/bean&gt;
  * 
  * &lt;bean id="<b>queryDAO</b>"
- *     class="<b>com.zhichubao.base.orm.mybatis.QueryDAOMyBatisImpl</b>"&gt;
+ *     class="<b>com.github.acticfox.base.orm.mybatis.QueryDAOMyBatisImpl</b>"&gt;
  *     &lt;property name="sqlSessionFactory" ref="sqlSessionFactory" /&gt;
  * &lt;/bean&gt;
  * 

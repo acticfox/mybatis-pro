@@ -1,7 +1,7 @@
 /*
  * $Id: MySQLDialect.java 252 2013-05-30 03:23:10Z fanyong.kfy $
  *
- * Copyright (c) 2013 zhichubao.com. All Rights Reserved.
+ * Copyright (c) 2013 github.com. All Rights Reserved.
  */
 package com.github.acticfox.base.mybatis.support.dialect;
 
@@ -19,7 +19,7 @@ public class DefaultDialect implements Dialect {
 
     /*
      * (non-Javadoc)
-     * @see com.zhichubao.common.admin.dao.dialect.Dialect#getLimitString(java.lang.String, int, int)
+     * @see com.github.common.admin.dao.dialect.Dialect#getLimitString(java.lang.String, int, int)
      */
     public String getLimitString(String sql, int offset, int limit) {
         StringBuffer buffer = new StringBuffer(sql.length() + 20);

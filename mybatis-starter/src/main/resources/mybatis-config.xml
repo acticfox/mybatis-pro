@@ -9,9 +9,9 @@
 	
 	<plugins>
 		<plugin
-			interceptor="com.zhichubao.base.mybatis.support.ResultSetHandlerInterceptor" />
+			interceptor="com.github.acticfox.base.mybatis.support.ResultSetHandlerInterceptor" />
 		<plugin
-			interceptor="com.zhichubao.base.mybatis.support.StatementHandlerInterceptor" />
+			interceptor="com.github.acticfox.base.mybatis.support.StatementHandlerInterceptor" />
 	</plugins>
 	
 </configuration>

@@ -29,8 +29,8 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.zhichubao.shared</groupId>
-			<artifactId>base-mybatis</artifactId>
+			<groupId>com.github.acticfox</groupId>
+			<artifactId>mybatis-dao</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>

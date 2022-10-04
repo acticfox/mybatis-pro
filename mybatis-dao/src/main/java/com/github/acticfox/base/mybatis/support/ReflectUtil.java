@@ -1,7 +1,7 @@
 /*
  * $Id$
  *
- * Copyright (c) 2013 zhichubao.com. All Rights Reserved.
+ * Copyright (c) 2013 github.com. All Rights Reserved.
  */
 package com.github.acticfox.base.mybatis.support;
 

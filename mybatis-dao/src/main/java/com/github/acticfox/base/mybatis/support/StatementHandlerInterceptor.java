@@ -1,7 +1,7 @@
 /*
  * $Id$
  *
- * Copyright (c) 2013 zhichubao.com. All Rights Reserved.
+ * Copyright (c) 2013 github.com. All Rights Reserved.
  */
 package com.github.acticfox.base.mybatis.support;
 
@@ -40,7 +40,7 @@ import com.github.acticfox.base.mybatis.support.dialect.Dialect;
  * 
  * <pre>
  * &lt;plugins&gt;
- *      &lt;plugin interceptor="com.zhichubao.base.orm.mybatis.support.StatementHandlerPreparePlugin"&gt;&lt;/plugin&gt;
+ *      &lt;plugin interceptor="com.github.acticfox.base.orm.mybatis.support.StatementHandlerPreparePlugin"&gt;&lt;/plugin&gt;
  * &lt;/plugins&gt;
  * </pre>
  * 
@@ -48,8 +48,8 @@ import com.github.acticfox.base.mybatis.support.dialect.Dialect;
  * 
  * <pre>
  * &lt;plugins&gt;
- *      &lt;plugin interceptor="com.zhichubao.base.orm.mybatis.support.StatementHandlerPreparePlugin"&gt;
- *          &lt;property name="dialectClass" value="com.zhichubao.mynet.base.orm.mybatis.support.dialect.OracleDialect"/&gt;
+ *      &lt;plugin interceptor="com.github.acticfox.base.orm.mybatis.support.StatementHandlerPreparePlugin"&gt;
+ *          &lt;property name="dialectClass" value="com.github.acticfox.base.orm.mybatis.support.dialect.OracleDialect"/&gt;
  *      &lt;/plugin&gt;
  * &lt;/plugins&gt;
  * </pre>

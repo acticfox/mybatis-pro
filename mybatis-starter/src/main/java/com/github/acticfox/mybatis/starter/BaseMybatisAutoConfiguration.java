@@ -12,12 +12,12 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceBuilder;
-import com.zhichubao.base.dao.QueryDAO;
-import com.zhichubao.base.dao.UpdateDAO;
-import com.zhichubao.base.mybatis.QueryDAOMyBatisImpl;
-import com.zhichubao.base.mybatis.QueryRowHandlerDAOMyBatisImpl;
-import com.zhichubao.base.mybatis.UpdateDAOMyBatisImpl;
-import com.zhichubao.base.mybatis.orm.EntityManager;
+import com.github.acticfox.base.dao.QueryDAO;
+import com.github.acticfox.base.dao.UpdateDAO;
+import com.github.acticfox.base.mybatis.QueryDAOMyBatisImpl;
+import com.github.acticfox.base.mybatis.QueryRowHandlerDAOMyBatisImpl;
+import com.github.acticfox.base.mybatis.UpdateDAOMyBatisImpl;
+import com.github.acticfox.base.mybatis.orm.EntityManager;
 
 @Configuration
 public class BaseMybatisAutoConfiguration {

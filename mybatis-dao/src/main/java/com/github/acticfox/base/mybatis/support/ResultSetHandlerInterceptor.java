@@ -1,7 +1,7 @@
 /*
  * $Id$
  *
- * Copyright (c) 2013 zhichubao.com. All Rights Reserved.
+ * Copyright (c) 2013 github.com. All Rights Reserved.
  */
 package com.github.acticfox.base.mybatis.support;
 
@@ -23,7 +23,7 @@ import org.apache.ibatis.session.RowBounds;
  * 
  * <pre>
  * &lt;plugins&gt;
- *      &lt;plugin interceptor="com.zhichubao.base.orm.mybatis.support.ResultSetHandlerHandleResultSetsPlugin"&gt;&lt;/plugin&gt;
+ *      &lt;plugin interceptor="com.github.acticfox.base.orm.mybatis.support.ResultSetHandlerHandleResultSetsPlugin"&gt;&lt;/plugin&gt;
  * &lt;/plugins&gt;
  * </pre>
  * 
@@ -33,42 +33,42 @@ import org.apache.ibatis.session.RowBounds;
 @Intercepts({@Signature(type = ResultSetHandler.class, method = "handleResultSets", args = {Statement.class})})
 public class ResultSetHandlerInterceptor implements Interceptor {
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see org.apache.ibatis.plugin.Interceptor#intercept(org.apache.ibatis.plugin.Invocation)
-	 */
-	@Override
-	public Object intercept(Invocation invocation) throws Throwable {
+    /*
+     * (non-Javadoc)
+     * 
+     * @see org.apache.ibatis.plugin.Interceptor#intercept(org.apache.ibatis.plugin.Invocation)
+     */
+    @Override
+    public Object intercept(Invocation invocation) throws Throwable {
 
-		// 获取处理目标
-		ResultSetHandler target = (ResultSetHandler) invocation.getTarget();
-		RowBounds rowBounds = (RowBounds) ReflectUtil.getFieldValue(target, "rowBounds");
+        // 获取处理目标
+        ResultSetHandler target = (ResultSetHandler)invocation.getTarget();
+        RowBounds rowBounds = (RowBounds)ReflectUtil.getFieldValue(target, "rowBounds");
 
-		// 调整数据内容
-		if (rowBounds.getLimit() > 0 && rowBounds.getLimit() < RowBounds.NO_ROW_LIMIT) {
-			ReflectUtil.setFieldValue(target, "rowBounds", new RowBounds());
-		}
-		return invocation.proceed();
-	}
+        // 调整数据内容
+        if (rowBounds.getLimit() > 0 && rowBounds.getLimit() < RowBounds.NO_ROW_LIMIT) {
+            ReflectUtil.setFieldValue(target, "rowBounds", new RowBounds());
+        }
+        return invocation.proceed();
+    }
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see org.apache.ibatis.plugin.Interceptor#plugin(java.lang.Object)
-	 */
-	@Override
-	public Object plugin(Object target) {
-		return Plugin.wrap(target, this);
-	}
+    /*
+     * (non-Javadoc)
+     * 
+     * @see org.apache.ibatis.plugin.Interceptor#plugin(java.lang.Object)
+     */
+    @Override
+    public Object plugin(Object target) {
+        return Plugin.wrap(target, this);
+    }
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see org.apache.ibatis.plugin.Interceptor#setProperties(java.util.Properties)
-	 */
-	@Override
-	public void setProperties(Properties properties) {
-		// TODO Auto-generated method stub
-	}
+    /*
+     * (non-Javadoc)
+     * 
+     * @see org.apache.ibatis.plugin.Interceptor#setProperties(java.util.Properties)
+     */
+    @Override
+    public void setProperties(Properties properties) {
+        // TODO Auto-generated method stub
+    }
 }
