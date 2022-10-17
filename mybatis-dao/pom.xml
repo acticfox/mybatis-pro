@@ -2,36 +2,32 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
-	<groupId>com.github.acticfox</groupId>
 	<artifactId>mybatis-dao</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
-
-	<name>base-mybatis-ce</name>
+	<name>mybatis-dao</name>
 	<url>http://maven.apache.org</url>
 
 	<parent>
-		<groupId>com.github.acticfox</groupId>
+		<groupId>io.github.acticfox</groupId>
 		<artifactId>mybatis-pro</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
 	<dependencies>
 		<dependency>
-			<groupId>com.github.acticfox</groupId>
+			<groupId>io.github.acticfox</groupId>
 			<artifactId>common-api</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>${acticfox-version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.github.acticfox</groupId>
+			<groupId>io.github.acticfox</groupId>
 			<artifactId>mybatis-cache</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>${acticfox-version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.github.acticfox</groupId>
+			<groupId>io.github.acticfox</groupId>
 			<artifactId>base-dao</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>${acticfox-version}</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.persistence</groupId>
